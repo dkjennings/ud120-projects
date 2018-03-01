@@ -38,12 +38,15 @@ from sklearn.ensemble import RandomForestClassifier as rfc
 from sklearn.metrics import accuracy_score as a_s
 
 acctest = 0.8
-N = 5000
+N = 50000
 good = 0
 treeid = 0
 
 for i in range(N):
-    tryclf = rfc(criterion='entropy', max_leaf_nodes=10)#, min_samples_split=2)#criterion='entropy', max_leaf_nodes=10, min_samples_split=4
+    tryclf = rfc(criterion='entropy', max_leaf_nodes=10, min_samples_split=4)
+    #(criterion='entropy', 
+    #max_leaf_nodes=10, 
+    #min_samples_split=4)
     tprep = t()
     tryclf.fit(features_train, labels_train)
     tfit = t()
