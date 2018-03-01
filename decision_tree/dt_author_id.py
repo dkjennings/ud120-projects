@@ -19,11 +19,22 @@ from email_preprocess import preprocess
 ### labels_train and labels_test are the corresponding item labels
 features_train, features_test, labels_train, labels_test = preprocess()
 
+# a = len(features_train[0])
+# print(a)
+# b = len(features_test)
+# c = len(labels_train)
+# d = len(labels_test)
 
+# print(f"a:{a}+b:{b}={a+b}")
+# print(f"a:{a}+c:{c}={a+c}")
+# print(f"c:{c}+d:{d}={c+d}")
+# print(f"a+b+c+d={a+b+c+d}")
+# print(f".9*(a+b+c+d)={.9*(a+b+c+d)}")
 
 
 #########################################################
 ### your code goes here ###
+
 from sklearn import tree
 from sklearn.metrics import accuracy_score as a_s
 
